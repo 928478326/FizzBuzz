@@ -9,11 +9,12 @@ class FizzBuzz {
         int i = 1;
         while (i <= 100) {
 
-            i = getI(i);
+            doFB(i);
+            i++;
         }
     }
 
-    private static int getI(int i) {
+    private static void doFB(int i) {
         // Find out which numbers divide i.
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
@@ -36,7 +37,5 @@ class FizzBuzz {
             System.out.println(i);
 
         }
-        i++;
-        return i;
     }
 }
